@@ -1,0 +1,27 @@
+{
+    "target": "https://www.youtube.com/",
+    "timestamp": "2026-10-23T13:00:06.694849",
+    "status_code": 200,
+    "security_score": 85,
+    "security_headers": {
+        "present": {
+            "Strict-Transport-Security": "max-age=31536000",
+            "Content-Security-Policy": "require-trusted-types-for 'script', base-uri 'self';object-src 'none';script-src 'report-sample' 'nonce--0PNPJ3Iq63fVQvG3ih_2g' 'unsafe-inline' 'strict-dynamic' https: http: 'unsafe-eval';report-uri https://csp.withgoogle.com/csp/youtube_main/strict",
+            "X-Frame-Options": "SAMEORIGIN",
+            "X-Content-Type-Options": "nosniff",
+            "Permissions-Policy": "ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*",
+            "X-XSS-Protection": "0"
+        },
+        "missing": {
+            "Referrer-Policy": {
+                "severity": "LOW",
+                "description": "Controls how much referrer information is included with requests.",
+                "recommendation": "Add 'Referrer-Policy: strict-origin-when-cross-origin'"
+            }
+        },
+        "info_leak": {
+            "Server": "ESF"
+        }
+    },
+    "cors_findings": []
+}
